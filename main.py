@@ -2,8 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import smtplib
 
-MY_EMAIL = "ongoingpython@gmail.com"
-MY_PASSWORD = "cqzmoivhyfjtfkrc"
+MY_EMAIL = "******@gmail.com"
+MY_PASSWORD = "**********"
 URL = "https://www.amazon.com/dp/B075CYMYK6?psc=1&ref_=cm_sw_r_cp_ud_ct_FM9M699VKHTT47YD50Q6"
 headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
@@ -24,5 +24,5 @@ if price < 100:
         connection.starttls()
         connection.login(user=MY_EMAIL, password=MY_PASSWORD)
         connection.sendmail(from_addr=MY_EMAIL,
-                            to_addrs="sakina903@gmail.com",
+                            to_addrs="*******@gmail.com",
                             msg=message.encode("utf-8"))
